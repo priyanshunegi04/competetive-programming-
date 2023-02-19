@@ -1,0 +1,9 @@
+int f(int input[], int n, int curr){
+if(curr>=n)return 0;
+ 
+return input[0]+f(input+1, n, curr+1);
+}
+int sum(int input[], int n) {
+ 
+return f(input,n, 0);
+}
